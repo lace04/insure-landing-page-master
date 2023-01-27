@@ -1,0 +1,34 @@
+@use 'variables' as v;
+
+.header {
+  position: relative;
+  z-index: 1;
+  // display: block;
+  background-color: v.$background;
+  min-width: 1440px;
+  &__navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 80px;
+  }
+  @media (min-width: 1440px){
+    width: 1107px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    &__logo{
+      padding-left: 165px;
+    }
+  }
+  &__hamburguer{
+    &:hover{
+      cursor: pointer;
+    }
+    @media (min-width: 1440px){
+      display: none;
+    }
+  }
+}
+

@@ -1,0 +1,6 @@
+@use 'variables' as v;
+
+@mixin mobile-background {
+  background-color: v.$baltic-sea;
+  height: 587px;
+}

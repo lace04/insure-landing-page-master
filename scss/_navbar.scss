@@ -1,0 +1,54 @@
+@use 'variables' as v;
+
+.navbar {
+  position: relative;
+  z-index: 1;
+  display: none;
+  &__items {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 488px;
+    list-style: none;
+    text-transform: uppercase;
+    width: 447px;
+  }
+  &__link {
+    text-decoration: none;
+    color: v.$mobster;
+    font-family: v.$font-Karla;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    line-height: 15.2px;
+    margin-right: 25px;
+    &:hover {
+      cursor: pointer;
+      color: v.$baltic-sea;
+      transition: 0.3s;
+    }
+  }
+  &__link-btn {
+    border: 1.5px solid v.$baltic-sea;
+    text-decoration: none;
+    width: 146px;
+    height: 40px;
+    color: v.$baltic-sea;
+    font-family: v.$font-Karla;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15.2px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: -21px;
+    &:hover {
+      cursor: pointer;
+      background: v.$baltic-sea;
+      color: v.$White;
+      transition: 0.3s;
+    }
+  }
+  @media (min-width: 1440px) {
+    display: block;
+  }
+}

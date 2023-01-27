@@ -1,0 +1,68 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.modal-navbar {
+  position: relative;
+  display: none;
+  @include m.mobile-background;
+  color: v.$White;
+  padding: 40px 24px;
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 248px;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  &__link {
+    text-decoration: none;
+    color: v.$White;
+    font-family: v.$font-Karla;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1.36px;
+    line-height: 40px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__link-btn {
+    border: 2px solid v.$White;
+    width: 327px;
+    height: 56px;
+    background-color: transparent;
+    color: v.$White;
+    font-family: v.$font-Karla;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1.36px;
+    line-height: 40px;
+    text-transform: uppercase;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.hidden {
+  display: block;
+}
+.menu-bg {
+  position: absolute;
+  background: {
+    image: url(../images/bg-pattern-mobile-nav.svg);
+    repeat: no-repeat;
+  }
+  width: 375px;
+  height: 587px;
+  left: 0;
+  bottom: -370px;
+}
+
+.modal-navbar__close-icon {
+  &:hover {
+    cursor: pointer;
+  }
+}
